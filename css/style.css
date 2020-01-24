@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+/* Général */
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,8 +23,6 @@ a {
 .itali {
   font-style: oblique;
 }
-
-/* body */
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -128,18 +128,21 @@ nav a:hover {
   text-align: center;
   font-size: 0.8em;
   border: 1px solid rgba(206, 206, 206, 0.5);
+  overflow: hidden;
 
-  transform: scale(1);
-  transition: 0.3s ease-in-out;
+  /*  transform: scale(1);
+  transition: 0.3s ease-in-out;*/
 }
 
 .block img {
   width: 250px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  margin-bottom: 20px;
 }
 
-.block:hover {
+.block img:hover {
   transform: scale(1.3);
-  z-index: 99;
 }
 
 .block_text {
@@ -164,20 +167,19 @@ nav a:hover {
   background-color: #333;
   color: white;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-areas: "img text text";
 }
 
 #equipe img {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: img;
   width: 100%;
 }
 
 .equipe_text {
   padding: 50px;
-  grid-area: 1 / 2 / 2 / 4;
+  grid-area: text;
 }
 .equipe_text h3 {
   margin-bottom: 1em;
@@ -206,11 +208,12 @@ nav a:hover {
   margin: 1em;
   border: none;
   border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "profileg quoted quoted" "quoteg quoteg profiled";
+  padding: 20px;
+  transition: 0.3s ease-in-out;
 }
 
 .blockH:hover {
@@ -224,22 +227,29 @@ nav a:hover {
   border-radius: 75px;
 }
 
-profil {
-  padding: 15px;
+.profil {
+  padding: 50px;
 }
 
 .profileG {
-  order: 1;
+  grid-area: profileg;
   margin: 0 15px;
 }
 
 .quote {
-  order: 2;
   padding: 15px;
 }
 
+.quoteD {
+  grid-area: quoted;
+}
+
+.quoteG {
+  grid-area: quoteg;
+}
+
 .profileD {
-  order: 3;
+  grid-area: profiled;
 }
 
 .profile p {
