@@ -175,10 +175,12 @@ nav a:hover {
 #equipe img {
   grid-area: img;
   width: 100%;
+  height: auto;
 }
 
 .equipe_text {
-  padding: 50px;
+  margin: auto;
+  padding: 0 50px;
   grid-area: text;
 }
 .equipe_text h3 {
