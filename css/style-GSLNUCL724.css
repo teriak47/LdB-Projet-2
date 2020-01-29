@@ -1,0 +1,221 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.jaune {
+  color: rgb(242, 196, 20);
+  font-weight: 500;
+}
+
+.itali {
+  font-style: oblique;
+}
+
+/* body */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+}
+
+/* header */
+
+header {
+  height: 75px;
+  background-color: #303628;
+}
+
+header .container {
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header img {
+  max-width: 100%;
+  height: 30px;
+}
+
+h1 {
+  font-family: "Long Cang", cursive;
+  color: #fff;
+  display: inline;
+}
+
+nav ul {
+  margin: 1em 0.5em;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.1em 1.5em;
+  color: #fff;
+}
+
+nav a:hover {
+  color: rgb(242, 196, 20);
+  transition: 1s;
+}
+
+/* hero */
+
+#hero {
+  color: #fff;
+  background-image: url(../img/frame.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero_text {
+  text-align: center;
+  width: 350px;
+}
+
+#hero h2 {
+  font-weight: 900;
+}
+#hero p {
+  font-weight: 300;
+  margin-top: 2em;
+}
+
+/* offres */
+
+#offres {
+  background-color: lightgrey;
+  padding: 100px;
+}
+
+#offres h3 {
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.container_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  margin: 1em;
+  width: 250px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.block img {
+  width: 250px;
+}
+
+.block_text {
+  padding: 1em;
+}
+
+.block_text p {
+  margin-bottom: 1em;
+}
+
+.bar {
+  height: 2px;
+  background-color: black;
+  width: 25px;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+/* teams */
+
+#equipe {
+  background-color: #474747;
+  display: flex;
+  color: white;
+}
+
+#equipe img {
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipe_text {
+  padding: 50px;
+}
+.equipe_text h3 {
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+.equipe_text p {
+  font-size: 0.8em;
+}
+
+/* avis */
+
+#avis {
+  background-color: lightgrey;
+  padding: 100px;
+}
+
+#avis h3 {
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.blockH {
+  height: 150px;
+  background-color: #fff;
+  margin: 1em;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.cercle {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 75px;
+}
+
+.profileG {
+  order: 1;
+}
+
+.quote {
+  order: 2;
+  padding: 15px;
+}
+
+.profileD {
+  order: 3;
+}
+
+.profile p {
+  margin-top: 1em;
+  font-size: 0.5em;
+}
